@@ -21,8 +21,10 @@ tdb:GraphTDB    rdfs:subClassOf  ja:Model .
     fuseki:serviceUpdate               "update" ;
     fuseki:serviceUpload               "upload" ;
     fuseki:serviceReadWriteGraphStore  "data" ;
-    fuseki:dataset <#dataset> ;
+    fuseki:dataset <#dataset-mem> ;
     .
+
+<#dataset-mem> rdf:type ja:RDFDataset .
 
 <#dataset> a tdb:DatasetTDB ;
     tdb:location "../../data/ds" ;
